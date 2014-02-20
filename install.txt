@@ -1,0 +1,187 @@
+ZPanelX CentOS 6 Auto-Installer
+Installieren ZPanelX auf CentOS 6.4 (Gemeinschaftsunternehmen Operating System), ein Open-Source-Panel auf einer Open-Source-Betriebssystem!
+
+ZPanelCP CentOS Installer 10.1.0
+Installieren Sie eine saubere CentOS-Server mit ZPanelX
+Melden Sie sich bei Ihrem Server als Root-Benutzer nicht verwenden sudo.
+Laden Sie die richtige Installationsprogramm für Ihr System:
+64-Bit-Installer wget http://www.zvps.co.uk/downloads/centos/10-1-0/installer-10-1-0-centos-64.sh.x.tar.gz
+
+Oder
+
+32-Bit-Installer wget http://www.zvps.co.uk/downloads/centos/10-1-0/installer-10-1-0-centos-32.sh.x.tar.gz
+
+Entpacken Sie das Archiv
+64-Bit-Installer tar-xf Installer-10-1-0-CentOS-64.sh.x.tar.gz
+
+Oder
+
+32-Bit-Installer tar-xf Installer-10-1-0-CentOS-32.sh.x.tar.gz
+
+Ändern Sie das Skript ausführbar sein
+64-Bit-Installer chmod + x Installer-10-1-0-CentOS-64.sh.x
+
+Oder
+
+32-Bit-Installer chmod + x-Installer-10-1-0-CentOS-32.sh.x
+
+Installieren Sie vor der benötigten Pakete:
+yum install ld-linux.so.2 curl
+
+Führen Sie das Installationsprogramm ZPanelX
+64-Bit-Installer ./installer-10-1-0-centos-64.sh.x
+
+Oder
+
+32-Bit-Installer ./installer-10-1-0-centos-32.sh.x
+
+Folgen Sie den Anweisungen auf dem Bildschirm während der Installation.
+Die zadmin, MySQL root & postfix Passwörter sind alle in / root / passwords.txt nach der Installation gespeichert.
+Schließlich führen Sie den folgenden Befehl, um die gespeicherten IP-zpanel (gestrichelte API-Aufruf) REPLACE 0 mit Ihrem tatsächlichen öffentlichen IP zu beheben:
+Setso - Set server_ip 000.000.000.000
+
+ZPanelCP CentOS 10.1.0-Update
+Upgrade eines bestehenden 10.0.2 Server 10.1.0
+Warnungen zu diesem Update nicht aktualisieren, bis Sie diesen Abschnitt gelesen haben: 
+
+Nur dieses Skript zur Aktualisierung von 10.0.2 auf 10.1.0
+Wenn Sie nicht manuell aktualisiert den Postfix MySQL-Passwort ein neues Passwort erzeugt und in / root / passwords.txt gespeichert werden
+Melden Sie sich bei Ihrem Server als Root-Benutzer nicht verwenden sudo. 
+
+Laden Sie die richtige Installationsprogramm für Ihr System:
+64 Bit Updater wget http://www.zvps.co.uk/downloads/centos/10-1-0/updater-10-1-0-centos-64.sh.x.tar.gz
+
+Oder
+
+32 Bit Updater wget http://www.zvps.co.uk/downloads/centos/10-1-0/updater-10-1-0-centos-32.sh.x.tar.gz
+
+Entpacken Sie das Archiv
+64 Bit Updater tar-xf Updater-10-1-0-CentOS-64.sh.x.tar.gz
+
+Oder
+
+32 Bit Updater tar-xf Updater-10-1-0-CentOS-32.sh.x.tar.gz
+
+Ändern Sie das Skript ausführbar sein
+64 Bit Updater chmod + x Updater-10-1-0-CentOS-64.sh.x
+
+Oder
+
+32 Bit Updater chmod + x Updater-10-1-0-CentOS-32.sh.x
+
+Führen Sie die ZPanelX 10.1.0 Updater
+64 Bit Updater ./updater-10-1-0-centos-64.sh.x
+
+Oder
+
+32 Bit Updater ./updater-10-1-0-centos-32.sh.x
+
+Folgen Sie den Anweisungen auf dem Bildschirm während der Installation.
+Sie werden Ihre MySQL-root-Passwort, um dieses Update durchführen (kann obtainted werden von / etc / zpanel / Platte / cnf / db.php)
+Wenn eine neue Postfix-Passwort während der Aktualisierung generiert wurde, wird in / root / passwords.txt gespeichert werden
+Schließlich führen Sie den folgenden Befehl, um die gespeicherten IP-zpanel (gestrichelte API-Aufruf) REPLACE 0 mit Ihrem tatsächlichen öffentlichen IP zu beheben:
+Setso - Set server_ip 000.000.000.000
+
+ZPanelCP CentOS 10.0.2-Update
+Upgrade eines bestehenden 10.0.1 Server 10.0.2
+Warnungen zu diesem Update nicht aktualisieren, bis Sie diesen Abschnitt gelesen haben: 
+
+Wenn Sie eine Aktualisierung von 10.0.1 auf 10.0.2
+Sie müssen das Update-Skript 10.0.1 unabhängig von der Version, die derzeit in zpanel (10.0.0 oder 10.0.1) gezeigt ausführen. Bevor Sie dieses Update.
+
+Nach dem Update 10.0.2 hat die zadmin Passwort zurückgesetzt und in / root / passwords.txt gespeichert
+Alle Nutzer-Passwörter zurücksetzen müssen entweder von der zadmin oder Reset durch den Benutzer mit dem Passwort vergessen Funktionalität
+
+Die zadmin API-Schlüssel auch zurückgesetzt, wenn Sie diese in einer anderen Anwendung zu aktualisieren Sie es bitte.
+Seien Sie sich bewusst dieses Update macht eine Menge Änderungen der Systemkonfiguration auf alle Anwendungen von Drittanbietern durch zpanel verwendet.
+Prüfen Sie die Lauf-und Funktionsfähigkeit aller Systeme nach den Updates
+
+Wenn Sie irgendwelche Probleme nach dem Update haben, bitte in http://forums.zpanelcp.com/forumdisplay.php?63-General-Support-amp-Questions verfassen
+BITTE [update] zu Beginn des Post-Titel, so dass die Support-Team unter ZPanelCP identifizieren können, welche Art von Support-Ticket sie es zu tun
+
+Melden Sie sich bei Ihrem Server als Root-Benutzer nicht verwenden sudo. 
+
+Laden Sie die richtige Update für Ihr System:
+64 Bit Updater wget http://www.zvps.co.uk/sites/default/files/downloads/centos-6-3/package/installer-x86_64-10-0-2.sh.x.tar.gz
+
+Oder
+
+32 Bit Updater wget http://www.zvps.co.uk/sites/default/files/downloads/centos-6-3/package/installer-x86-10-0-2.sh.x.tar.gz
+
+Entpacken Sie das Archiv
+64 Bit Updater tar-xf installer-x86_64-10-0-2.sh.x.tar.gz
+
+Oder
+
+32 Bit Updater tar-xf Installer-x86-10-0-2.sh.x.tar.gz
+
+Ändern Sie das Skript ausführbar sein
+64 Bit Updater chmod + x installer-x86_64-10-0-2.sh.x
+
+Oder
+
+32 Bit Updater chmod + x-Installer-x86-10-0-2.sh.x
+
+Führen Sie das Installationsprogramm ZPanelX
+64 Bit Updater ./installer-x86_64-10-0-2.sh.x
+
+Oder
+
+32 Bit Updater ./installer-x86-10-0-2.sh.x
+
+Folgen Sie den Anweisungen auf dem Bildschirm während der Aktualisierung.
+Am Ende notieren Sie bitte den MySQL-root-Passwort. (Sie werden diese benötigen, um MySQL über die Root-Benutzer und auch für die Ausführung von zukünftigen Updates zpanel zugreifen) Alle Passwörter werden in / root / passwords.txt gespeichert
+Schließlich führen Sie den folgenden Befehl, um die gespeicherten IP-zpanel (gestrichelte API-Aufruf) REPLACE 0 mit Ihrem tatsächlichen öffentlichen IP zu beheben:
+Setso - Set server_ip 000.000.000.000
+
+ZPanelCP CentOS 10.0.1-Update
+Upgrade eines bestehenden 10.0.0 Server 10.0.1
+Warnungen zu diesem Update nicht aktualisieren, bis Sie diesen Abschnitt gelesen haben: 
+
+Wenn Sie eine Aktualisierung von 10.0.0 auf 10.0.1
+Sie MÜSSEN, um gleich danach 10.0.2 aktualisieren
+
+Nach dem Update 10.0.2 hat die zadmin Passwort zurückgesetzt und in / root / passwords.txt gespeichert
+Alle Nutzer-Passwörter zurücksetzen müssen entweder von der zadmin oder Reset durch den Benutzer mit dem Passwort vergessen Funktionalität
+
+Die zadmin API-Schlüssel auch zurückgesetzt, wenn Sie diese in einer anderen Anwendung zu aktualisieren Sie es bitte.
+Seien Sie sich bewusst dieses Update macht eine Menge Änderungen der Systemkonfiguration auf alle Anwendungen von Drittanbietern durch zpanel verwendet.
+Prüfen Sie die Lauf-und Funktionsfähigkeit aller Systeme nach den Updates
+
+Wenn Sie irgendwelche Probleme nach dem Update haben, bitte in http://forums.zpanelcp.com/forumdisplay.php?63-General-Support-amp-Questions verfassen
+BITTE [update] zu Beginn des Post-Titel, so dass die Support-Team unter ZPanelCP identifizieren können, welche Art von Support-Ticket sie es zu tun
+
+Melden Sie sich bei Ihrem Server als Root-Benutzer nicht verwenden sudo. 
+
+Laden Sie die richtige Update für Ihr System:
+64 Bit Updater wget http://www.zvps.co.uk/sites/default/files/downloads/centos-6-3/package/installer-x86_64-10-0-1.sh.x.tar.gz
+
+Oder
+
+32 Bit Updater wget http://www.zvps.co.uk/sites/default/files/downloads/centos-6-3/package/installer-x86-10-0-1.sh.x.tar.gz
+
+Entpacken Sie das Archiv
+64 Bit Updater tar-xf installer-x86_64-10-0-1.sh.x.tar.gz
+
+Oder
+
+32 Bit Updater tar-xf Installer-x86-10-0-1.sh.x.tar.gz
+
+Ändern Sie das Skript ausführbar sein
+64 Bit Updater chmod + x installer-x86_64-10-0-1.sh.x
+
+Oder
+
+32 Bit Updater chmod + x-Installer-x86-10-0-1.sh.x
+
+Führen Sie das Installationsprogramm ZPanelX
+64 Bit Updater ./installer-x86_64-10-0-1.sh.x
+
+Oder
+
+32 Bit Updater ./installer-x86-10-0-1.sh.x
+
+Folgen Sie den Anweisungen auf dem Bildschirm während der Aktualisierung.
+Am Ende notieren Sie bitte den MySQL-root-Passwort. (Sie werden diese benötigen, um MySQL über die Root-Benutzer und auch für die Ausführung von zukünftigen Updates zpanel zugreifen) Alle Passwörter werden in / root / passwords.txt gespeichert
+Schließlich führen Sie den folgenden Befehl, um die gespeicherten IP-zpanel (gestrichelte API-Aufruf) REPLACE 0 mit Ihrem tatsächlichen öffentlichen IP zu beheben:
+Setso - Set server_ip 000.000.000.000
